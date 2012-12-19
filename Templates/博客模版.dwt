@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html><!-- InstanceBegin template="/Templates/基础模版.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>八天UI</title>
+
+<!-- InstanceEndEditable -->
+
+<meta name="author" content="rAy">
+
+
+<link href="../asset/css/reset.css" rel="stylesheet" type="text/css">
+<link href="../asset/css/common.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" -->
+
+<!-- TemplateBeginEditable name="head" -->
+<meta name="description" content="">
+<!-- TemplateEndEditable -->
+<!-- InstanceEndEditable -->
+<!--[if lt IE 9]>
+    <script>
+  
+       var KillIE =(function(){
+          clipboardData.setData("text","http://lab.baobao1001.com/");
+          var leave = confirm("消灭低版本IE从我做起，请用现代浏览器浏览本站内容，网址已复制到粘贴板");
+       })();
+    </script>
+    
+    <![endif]-->
+</head>
+<body>
+<header id="header" role="banner">
+  <div class="container clearfix">
+    <div class="header-inner">
+      <hgroup>
+        <h1><a href="/">八天UI</a></h1>
+        <h2>八天UI是一个基于html5/css3/jQuery的响应式网页设计（responsive web design，RWD）方案以及使用less/minify进行项目管理及性能优化的框架</h2>
+      </hgroup>
+    </div>
+    <nav role="mainnav"><!-- InstanceBeginEditable name="EditRegionMainNav" -->
+    <ul class="mainnav clearfix">
+      <li><a href="../docs">文档</a></li>
+      <li><a href="../discuz">lab1001 for discuzX2.5</a></li>
+      <li class="active"><a href="../blog">博客</a></li>
+    </ul>
+    <!-- InstanceEndEditable --></nav>
+  </div>
+</header>
+<div class="container clearfix">
+  <aside id="sidebar"><!-- InstanceBeginEditable name="EditRegionSide" -->
+    <nav role="categories" class="sidenav">
+      <h4>运行环境</h4>
+      <ul id="environment-menu" class="menu">
+        <li><a href="#">shtml环境</a></li>
+        <li><a href="#">less编译环境</a></li>
+        <li><a href="#">less编译环境</a></li>
+      </ul>
+      <h4>html模版</h4>
+      <ul id="html-template-menu" class="menu">
+        <li><a href="http://asd.com">html规范</a></li>
+        <li><a href="#">网格系统</a></li>
+        <li><a href="#">响应式布局（RWD）</a></li>
+        <li><a href="#">数据列表</a></li>
+      </ul>
+      <h4>静态UI组件</h4>
+      <ul id="ui-menu" class="menu">
+        <li><a href="#">内容区域规范</a></li>
+        <li><a href="#">表格</a></li>
+        <li><a href="#">表单</a></li>
+        <li><a href="#">按钮</a></li>
+        <li><a href="#">图片</a></li>
+        <li><a href="#">图标</a></li>
+      </ul>
+      <h4>交互UI组件</h4>
+      <ul id="ui-menu" class="menu">
+        <li><a href="#">jQuery 插件编写规范</a></li>
+        <li><a href="#">下拉菜单</a></li>
+        <li><a href="#">导航条</a></li>
+        <li><a href="#">选项卡</a></li>
+        <li><a href="#">面包屑</a></li>
+        <li><a href="#">分页</a></li>
+        <li><a href="#">提示框</a></li>
+        <li><a href="#">进度条</a></li>
+        <li><a href="#">多媒体</a></li>
+        <li><a href="#">杂项</a></li>
+      </ul>
+    </nav>
+  <!-- InstanceEndEditable --></aside>
+  <article id="maincontent"><!-- InstanceBeginEditable name="EditRegionContent" -->内容区域 <!-- InstanceEndEditable -->
+  <!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" id="UYScript" src="http://v1.uyan.cc/js/iframe.js?UYUserId=1532596" async=""></script>
+<!-- UY END -->
+  </article>
+</div>
+<footer class="container" id="footer">
+		
+		<p><small>&copy; Copyright rAy 2012. All Rights Reserved.</small></p>
+		
+</footer>
+</body>
+<!-- InstanceEnd --></html>
