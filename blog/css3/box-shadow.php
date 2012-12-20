@@ -1,6 +1,7 @@
 <?php
 chdir('../../');
 $description = 'test';
+$seotitle = 'box-shadow';
 
 require_once './inc/header.php';
  ?>

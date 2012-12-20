@@ -21,7 +21,11 @@ if($nocommont){
 </div>
 <footer class="container" id="footer">
 		
-		<p><small>&copy; Copyright rAy 2012. All Rights Reserved.</small></p>
+		<p><small>&copy; Copyright rAy 2012. All Rights Reserved.
+<?php
+$endtime = microtime();
+echo 'Processed in '.($endtime - $starttime).'ms';
+?></small></p>
 		
 	</footer>
 <script type="text/javascript">

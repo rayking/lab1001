@@ -1,9 +1,11 @@
 <?php
+chdir('../../');
+$seotitle = 'this is a title';
 $description = 'test';
-$navdata = '首页导航';
+
 require_once './inc/header.php';
  ?>
-  内容区域hometest
+  内容区域
 
  <?php
 require_once './inc/footer.php';

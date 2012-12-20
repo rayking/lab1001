@@ -60,13 +60,16 @@ a:visited {
 }
 /*内容区域*/
 	/*侧栏*/
-	#sidebar { float:left; width:220px;}
-	.sidenav h4 { font-size:14px; color:#666; padding-bottom:5px; border-bottom:1px solid #e6e6e6; margin-bottom:5px;}
+	#sidebar { float:left; width:180px;}
+	.sidenav h4 {  padding-bottom:5px; border-bottom:1px solid #e6e6e6; margin-bottom:5px;}
+	.sidenav h4 a {font-size:14px; color:#666; text-decoration:none;}
 	.sidenav ul{ margin-bottom:5px;}
-	.sidenav ul li { height:24px; line-height:24px;}
+	.sidenav ul li { height:24px; line-height:24px; padding-left:8px;}
+	.sidenav ul li.active { background:#FF6;}
+	.sidenav ul li.active a{ color:#444;} 
 	.sidenav ul li a { text-decoration:none;}
 	/*主体内容区域*/
-	#maincontent { float:right; width:730px;}
+	#maincontent { float:right; width:770px;}
 /*底部*/
 #footer { border-top:1px solid #e6e6e6; margin-top:20px; padding-top:20px;}
 #footer p{ text-align:center;color:#999;}
