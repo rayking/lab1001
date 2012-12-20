@@ -27,7 +27,7 @@ $login->num_3 = $random_num_3;
 
 //Verify
 if (!$login->verify_settings()) {
-	echo '<strong>Invalid Admin Settings for Login Script</strong><br />Check your settings and retry logging in';
+	echo '<strong>管理员信息出错</strong><br />检查你的设置再重新登录';
 	exit();
 }
 							 
@@ -37,7 +37,7 @@ if (isset($_COOKIE[$domain_code.'_uid']) && $_COOKIE[$domain_code.'_uid']!='' &&
 	$key_cid = $login->cleanse_input($_COOKIE[$domain_code.'_cid']);
 	
 	if (!$login->verify_login($key_uid, $key_cid)) {
-		$login->error_message = 'Login has expired';
+		$login->error_message = '登录过期';
 	} else {
 		$pass_login = TRUE;	
 	}
@@ -60,7 +60,7 @@ if (!$pass_login) {
 			
 			$need_login = FALSE;
 		} else {
-			$login->error_message = 'Invalid login username and password';	
+			$login->error_message = '用户名或密码错误';	
 			$need_login = TRUE;
 		}
 	} 
