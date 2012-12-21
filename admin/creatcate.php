@@ -63,17 +63,19 @@ foreach($documentree as $topkey => $topvalue){
 	/*检查文件夹是否存在，如果不存在则创建*/
 	$isnewfolder = creatfolder($topkey);
 	/*创建默认首页index.php*/
-	creatdefaultpage($topkey.'/index',0);	
+	creatdefaultpage($topkey.'/index',1);	
 	echo '<li><label for="'.$topkey.'"><a href="'.$SITEURL.$topkey.'">'.$topvalue[0].'</a>'.($isnewfolder?'新建':'').'</label> <input type="checkbox" checked disabled id="'.$topkey.'" />';
 	if($topvalue[1]){
 	echo '<ol>';
 	foreach($topvalue[1] as $catekey => $catevalue){
 		
 		$isnewfolder = creatfolder($topkey.'/'.$catekey);
+		creatdefaultpage($topkey.'/'.$catekey.'/index',2);	
 		echo '<li><label for="'.$catekey.'"><a href="'.$SITEURL.$topkey.'/'.$catekey.'/">'.$catevalue[0].'</a>'.($isnewfolder?'新建':'').'</label> <input type="checkbox" id="'.$catekey.'" />';
 		if($catevalue[1]){
 		echo '<ol>';
 			foreach($catevalue[1] as $itemkey => $itemvalue){
+				creatdefaultpage($topkey.'/'.$catekey.'/'.$itemkey,2);	
 				echo '<li class="file"><a href="'.$SITEURL.$topkey.'/'.$catekey.'/'.$itemkey.'.php">'.$itemvalue.'</a></li>';
 				}
 		echo '</ol>';
