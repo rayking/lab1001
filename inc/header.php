@@ -1,4 +1,5 @@
 <?php
+
 /*站点*/
 $starttime = microtime();
 	
@@ -33,6 +34,11 @@ $documentree = array(
 													'creating-a-simple-php-login-without-a-database' =>'无数据库登录',
 													'less' => 'less编译环境'
 												))
+					)),
+					'test2' =>array('test2',array(
+												'test3' =>array('test3',array())
+					
+					
 					))
 
 );
@@ -94,6 +100,12 @@ echo $sitename;
     
     <![endif]-->
 <link href="<?php echo $SITEURL?>asset/css/reset.css" rel="stylesheet" type="text/css">
+<?php 
+if($extcss){
+echo '<link href="'.$SITEURL.$extcss.'" rel="stylesheet" type="text/css">';
+	
+	}
+?>
 <link href="<?php echo $SITEURL?>asset/css/common.css" rel="stylesheet" type="text/css">
 </head>
 <body>
