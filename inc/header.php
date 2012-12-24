@@ -12,11 +12,13 @@ $documentree = array(
 					
 					'docs' =>array('文档',array(
 												'environment' => array('开发环境' , array(
+													'textual-convention' =>'文本约定',
 													'shtml' =>'SHTML环境',
 													'less' => 'less编译环境',
 												)),
 												'HTMLtemplate' => array('HTML模版', array(
 													'html' =>'html规范',
+													'typography' => '正文格式及语义化',
 													'grid' =>'网格体系',
 													'RWD' =>'响应式布局(RWD)'
 												)),
