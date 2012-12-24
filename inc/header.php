@@ -100,13 +100,12 @@ echo $sitename;
     
     <![endif]-->
 <link href="<?php echo $SITEURL?>asset/css/reset.css" rel="stylesheet" type="text/css">
+<link href="<?php echo $SITEURL?>asset/css/common.css" rel="stylesheet" type="text/css">
 <?php 
 if($extcss){
 echo '<link href="'.$SITEURL.$extcss.'" rel="stylesheet" type="text/css">';
-	
 	}
 ?>
-<link href="<?php echo $SITEURL?>asset/css/common.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <header id="header" role="banner">

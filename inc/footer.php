@@ -28,6 +28,12 @@ echo 'Processed in '.($endtime - $starttime).'ms';
 ?></small></p>
 		
 	</footer>
+    
+    <?php 
+if($extjs){
+echo '<script type="text/javascript" src="'.$SITEURL.$extjs.'"></script>';
+	}
+?>
 <script type="text/javascript">
 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
 document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fdbd40babfe06b418a82db3f19051ee6b' type='text/javascript'%3E%3C/script%3E"));
