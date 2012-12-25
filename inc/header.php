@@ -39,8 +39,21 @@ $documentree = array(
 													'less' => 'less编译环境'
 												))
 					)),
-					'test2' =>array('test2',array(
-												'test3' =>array('test3',array())
+					'1001cms' =>array('下载本程序',array(
+												'feature' =>array('特性',array(
+													'original-coder' => '原生态',
+													'hi-performance' =>'高性能',
+													'joy-document' =>'文件管理乐趣',
+													'WYSIWYG' => '所见即所得',
+													'seo-friendly' => '友好的SEO'
+												)),
+												'help' => array('使用帮助',array(
+													'install' =>'安装',
+													'manage' =>'栏目管理',
+													'write' =>'发布文章',
+													'social-app' =>'社交APP应用'
+												
+												))
 					
 					
 					))
