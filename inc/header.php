@@ -14,7 +14,9 @@ $documentree = array(
 												'environment' => array('开发环境' , array(
 													'textual-convention' =>'文本约定',
 													'shtml' =>'SHTML环境',
-													'less' => 'less编译环境',
+													'less' => 'less动态样式环境'
+													
+													
 												)),
 												'HTMLtemplate' => array('HTML模版', array(
 													'html' =>'html规范',
