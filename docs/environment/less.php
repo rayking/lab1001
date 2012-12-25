@@ -12,11 +12,11 @@ require_once './inc/header.php';
 
 <p>一个偶然的机会，发现了<abbr title="一种动态样式语言" class="initialism">LESS</abbr>，对于我来说，<abbr title="一种动态样式语言" class="initialism">LESS</abbr>为我解决了几个问题：
 <ol>
-<li>在大中型项目中，将UI中的各个设置以变量的方式储存，更加规范。</li>
+<li>在大中型项目中，将UI中的各个设置以变量的方式储存。</li>
 <li>多人协作的团队中，避免了css的风格不一，可以作为一种标准来规范。</li>
 <li>模块式的开发过程中，代码块清晰、方便。</li>
 <li>css3针对不同浏览器的特殊定义更加方便了。</li>
-<li>一些UI组建可以通过less函数/类功能实现，使用仅需传递参数。</li>
+<li>一些UI组件可以通过less函数/类功能实现，使用时仅需传递参数。</li>
 </ol>
 更多关于<abbr title="一种动态样式语言" class="initialism">LESS</abbr>的信息请移步至<a href="http://www.lesscss.net/">http://www.lesscss.net/</a>.
 </p>
