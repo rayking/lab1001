@@ -15,6 +15,8 @@ require_once './inc/header.php';
 
 <ul>
 <li><a href="creatcate_catepage.php">生成目录</a><span>根据inc/header.php中的分配配置数组，生成对应的目录和文件</span></li>
+<li><a href="creatcate_catepage.php">生成目录首页文章列表</a><span>根据admin/_login_users.php中的的设置，生成栏目文章列表。</span></li>
+<li><a href="creatcate_sitemap.php">生成google/baidu的sitemap文件</a><span>在admin/_login_users.php中配置sitemap参数</span></li>
 </ul>
  <?php
 require_once './inc/footer.php';

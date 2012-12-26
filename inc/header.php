@@ -2,7 +2,7 @@
 
 /*站点*/
 $starttime = microtime();
-	
+$isWAMP = false;	
 $isDev = $_SERVER['HTTP_HOST'] == 'localhost';
 $SITEURL = $isDev ? 'http://localhost/lab1001/' :'http://lab.baobao1001.com/'; //站点url
 $sitename = "8天UI";//站点名字
@@ -66,7 +66,9 @@ if($isDev){
 	unset($pathinfo[1]);
 	$pathinfo = array_values($pathinfo);
 	}
-	
+if($isWAMP){
+	unset($pathinfo[0]);
+	}
 $filename =  $pathinfo[sizeof($pathinfo)-1];
 $foldername = $pathinfo[sizeof($pathinfo)-2];
 $parentfoldername = $pathinfo[sizeof($pathinfo)-3];
