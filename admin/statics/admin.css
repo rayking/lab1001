@@ -23,7 +23,7 @@ body .tree { font-size: 1em; /* Sets base font size to 16px */ }
 #maincontent ol.tree
 {
 	padding: 10px 10px 10px 30px;
-	width: 300px;
+	width: 100%;
 	margin:10px;
 }
 #maincontent .tree li 
@@ -43,8 +43,9 @@ body .tree { font-size: 1em; /* Sets base font size to 16px */ }
 			color: #fff;
 			padding-left: 21px;
 			text-decoration: none;
-			display: block;
+			display: inline-block;
 		}
+#maincontent .tree li.file em { font-style:normal; color:#aaa; margin-left:10px; }
 #maincontent .tree li.file a[href *= '.pdf']	{ background: url(document.png) 0 0 no-repeat; }
 #maincontent .tree li.file a[href *= '.html']	{ background: url(document.png) 0 0 no-repeat; }
 #maincontent .tree li.file a[href $= '.css']	{ background: url(document.png) 0 0 no-repeat; }
@@ -86,4 +87,6 @@ body .tree { font-size: 1em; /* Sets base font size to 16px */ }
 #maincontent .tree li input:checked + ol > li { display: block; margin: 0 0 0.125em;  /* 2px */}
 #maincontent .tree li input:checked + ol > li:last-child { margin: 0 0 0.063em; /* 1px */ }
 		
-
+#maincontent em.red { color:#F90!important;}
+#creatindexpage {}
+.bigbtn { font:24px/24px "Microsoft Yahei","Tahoma","SimSun"; display:inline-block; background:#39F; color:#fff!important; text-decoration:none; padding:10px 20px; }
