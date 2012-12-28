@@ -1,7 +1,11 @@
 <?php
-chdir('../../');
 $description = 'html5亮点之一在于语义化，本文档也对正文格式化语义化做出了一些约定';
 $seotitle = '正文格式及语义化';
+if($intask){
+	return;
+	}
+chdir('../../');
+
 $extcss = '';
 $extjs = '';
 require_once './inc/header.php';

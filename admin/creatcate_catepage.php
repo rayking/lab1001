@@ -33,9 +33,13 @@ function creatdefaultpage($filename,$path =0){
 		$pathlevel = array('','../','../../');
 		$templatestr  = 
 	'<?php'. "\n".
-	'chdir(\''.$pathlevel[$path].'\');'. "\n".
 	'$description = \'页面描述\';'. "\n".
 	'$seotitle = \'又一篇好文即将诞生\';'. "\n".
+	'if($intask){'. "\n".
+	'return;'. "\n".
+	'}'. "\n".
+	'chdir(\''.$pathlevel[$path].'\');'. "\n".
+	
 	'$extcss = \'\';'. "\n".
 	'$extjs = \'\';'. "\n".
 	'require_once \'./inc/header.php\';'. "\n".

@@ -1,7 +1,11 @@
 <?php
-chdir('../../');
 $seotitle = 'less动态样式环境';
 $description = 'test';
+if($intask){
+	return;
+	}
+chdir('../../');
+
 
 require_once './inc/header.php';
 

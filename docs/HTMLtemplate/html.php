@@ -1,12 +1,15 @@
 <?php
+$description = '页面描述';
+$seotitle = '又一篇好文即将诞生';
+if($intask){
+return;
+}
 chdir('../../');
-$seotitle = 'this is a title';
-$description = 'test';
-
+$extcss = '';
+$extjs = '';
 require_once './inc/header.php';
- ?>
-  内容区域
-
- <?php
+?>
+又一篇好文即将诞生
+<?php
 require_once './inc/footer.php';
- ?>
+?>

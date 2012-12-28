@@ -64,7 +64,7 @@ function listdir_by_date($path){
 	}
 	
 	
-$articlearrayfile = 'admin/article.array.php';	
+$articlearrayfile = 'admin/data/article.array.php';	
 
 /*读取文件 用于比较是否更新*/
 if (file_exists($articlearrayfile)){

@@ -1,12 +1,15 @@
 <?php
+$description = '页面描述';
+$seotitle = '又一篇好文即将诞生';
+if($intask){
+return;
+}
 chdir('../../');
-$description = 'creating-a-simple-php-login-without-a-database';
-$seotitle = 'creating-a-simple-php-login-without-a-database';
-
+$extcss = '';
+$extjs = '';
 require_once './inc/header.php';
- ?>
-  creating-a-simple-php-login-without-a-database
-
- <?php
+?>
+又一篇好文即将诞生
+<?php
 require_once './inc/footer.php';
- ?>
+?>

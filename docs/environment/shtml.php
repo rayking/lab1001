@@ -1,7 +1,11 @@
 <?php
+$seotitle = 'less动态样式环境';
+$description = 'test';
+if($intask){
+	return;
+	}
 chdir('../../');
-$seotitle = '让apache支持shtml';
-$description = '使用shtml格式文档嵌入页面提高开发效率';
+
 
 require_once './inc/header.php';
  ?>
