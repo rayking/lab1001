@@ -59,6 +59,9 @@ $documentree = array(
 					))
 
 );
+if($intask){
+return;
+}
 $pathinfo = explode("/",$_SERVER['REQUEST_URI']);
 
 if($isDev){
