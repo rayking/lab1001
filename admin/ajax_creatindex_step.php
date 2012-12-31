@@ -9,10 +9,13 @@ $articlearrayfile = 'admin/data/article.array.php';
 if (file_exists($articlearrayfile)){
 $lastupdatelist = file_get_contents($articlearrayfile);
 $lastupdatelistarr = unserialize($lastupdatelist);
+$defaulttopkeys = array_keys($lastupdatelistarr);
+$defaulttopkey = $defaulttopkeys['0'];
+$defaultcatekey =  key(reset($lastupdatelistarr));
 
-//$defaultcatekey = key(reset($lastupdatelistarr[$lastupdatelistarr]));
-$cur_topkey = addslashes($_GET['topkey']);
-$cur_catekey = addslashes($_GET['catekey']);
+	$cur_topkey = $_GET['topkey']  ?  $_GET['topkey'] : $defaulttopkey;
+	$cur_catekey = $_GET['catekey'] ? $_GET['catekey'] : $defaultcatekey;
+
 
 /*安全检测*/
 $alltopkey = array_keys($lastupdatelistarr);
@@ -37,13 +40,19 @@ foreach($lastupdatelistarr[$cur_topkey][$cur_catekey] as $k=>$v){
 	/*引入header.inc里的栏目配置数组*/
 require_once './inc/header.php';
 
-print_r($documentree);
-print_r($listinfo);
-function creatlistpage($filename,$path =0){
+
+
+function creatlistpage($dirstr,$listinfoarr,$path =0){
+	global $SITEURL;
 	/*检查是否存在*/
 	/*修改此处时请谨慎，避免覆盖已有的文档*/
 	$pathlevel = array('','../','../../');
-		$templatestr  = 
+	$itemlistcontent = '<ul>';
+	foreach($listinfoarr as $k => $v){
+		$itemlistcontent .='<article><h2><a href="'.$SITEURL.$dirstr.'/'.$cur_catekey.$k.'">'.$v[0].'</a></h2><p>'.$v[1].'</p></article>'; 	
+		}
+	$itemlistcontent .= '</ul>';
+	$templatestr  = 
 	'<?php'. "\n".
 	'$description = \'页面描述\';'. "\n".
 	'$seotitle = \'又一篇好文即将诞生\';'. "\n".
@@ -51,18 +60,16 @@ function creatlistpage($filename,$path =0){
 	'return;'. "\n".
 	'}'. "\n".
 	'chdir(\''.$pathlevel[$path].'\');'. "\n".
-	
 	'$extcss = \'\';'. "\n".
 	'$extjs = \'\';'. "\n".
 	'require_once \'./inc/header.php\';'. "\n".
 	'?>'. "\n".
-	  又一篇好文即将诞生. "\n".
+	  $itemlistcontent. "\n".
 	 '<?php'. "\n".
 	'require_once \'./inc/footer.php\';'. "\n".
 	'?>'. "\n"
 	; 
-
-	$fp = fopen($filename.".php", "w");
+	$fp = fopen($dirstr."/index.php", "w");
 
 	fwrite($fp, $templatestr);
 	
@@ -71,6 +78,12 @@ function creatlistpage($filename,$path =0){
 	
 	}
 	
+	/*执行生成index页的函数*/
+	$dirstr = $cur_topkey.'/'.$cur_catekey;
+	
+	$listinfoarr = $listinfo[$cur_topkey][$cur_catekey];
+	print_r($listinfoarr);
+	creatlistpage($dirstr,$listinfoarr,$path =2);
 }//if (file_exists($articlearrayfile))end
 
  ?>

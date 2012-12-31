@@ -101,7 +101,7 @@ $tasklist = array();
 	echo '<ol>';
 	foreach($topvalue[1] as $catekey => $catevalue){
 		
-		echo '<li><label for="'.$catekey.'"><a href="'.$SITEURL.$topkey.'/'.$catekey.'/">'.$catevalue[0].'</a>'.($isnewfolder?'<i>新建</i>':'').'</label> <input type="checkbox" id="'.$catekey.'" />';
+		echo '<li><label for="'.$catekey.'"><a href="'.$SITEURL.$topkey.'/'.$catekey.'/">'.$catevalue[0].'</a>'.($isnewfolder?'<i>新建</i>':'').' <a href="ajax_creatindex_step.php?topkey='.$topkey.'&catekey='.$catekey.'">[更新]</a></label> <input type="checkbox" id="'.$catekey.'" />';
 		
 		echo '<ol>';
 		$articlearr[$topkey][$catekey] = listdir_by_date($topkey.'/'.$catekey.'/');
