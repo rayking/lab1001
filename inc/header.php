@@ -152,12 +152,12 @@ echo '<link href="'.$SITEURL.$extcss.'" rel="stylesheet" type="text/css">';
     </nav>
   </div>
 </header>
-<div class="container clearfix">
+<div class="container clearfix" id="main">
 
   <aside id="sidebar">
    
     <?php
-	if($documentree[$cate_name]){
+	if($documentree[$cate_name] && !$navdata){
 		echo ' <nav role="categories" class="sidenav">';
 		foreach($documentree[$cate_name][1] as $key =>$value){
 			echo '<h4><a href="'.$SITEURL.$cate_name.'/'.$key.'/">'.$value[0].'</a></h4>'. "\n";
