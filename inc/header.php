@@ -7,6 +7,7 @@ $isDev = $_SERVER['HTTP_HOST'] == 'localhost';
 $SITEURL = $isDev ? 'http://localhost/lab1001/' :'http://lab.baobao1001.com/'; //站点url
 $sitename = "8天UI";//站点名字
 $sitedes = '八天UI是一个基于html5/css3/jQuery的响应式网页设计（responsive web design，RWD）方案以及使用less/minify进行项目管理及性能优化的框架';
+$itemperpage = 5;
 /*站点文档结构 channels -> categories ->items*/
 $documentree = array(
 					
@@ -134,7 +135,7 @@ echo '<link href="'.$SITEURL.$extcss.'" rel="stylesheet" type="text/css">';
   <div class="container clearfix">
     <div class="header-inner">
       <hgroup>
-        <h1><a href="<?php echo $SITEURL?>"><?php echo $sitename?></a></h1>
+        <h1><a href="<?php echo $SITEURL?>"><img src="<?php echo $SITEURL?>asset/img/logo.png"></a></h1>
         <h2><?php echo $sitedes?></h2>
       </hgroup>
     </div>

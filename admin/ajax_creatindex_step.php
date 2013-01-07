@@ -49,7 +49,7 @@ function creatlistpage($dirstr,$listinfoarr,$path =0){
 	$pathlevel = array('','../','../../');
 	$itemlistcontent = '<ul>';
 	foreach($listinfoarr as $k => $v){
-		$itemlistcontent .='<article><h2><a href="'.$SITEURL.$dirstr.'/'.$cur_catekey.$k.'">'.$v[0].'</a></h2><p>'.$v[1].'</p></article>'; 	
+		$itemlistcontent .='<article><h3><a href="'.$SITEURL.$dirstr.'/'.$cur_catekey.$k.'">'.$v[0].'</a></h3><p>'.$v[1].'</p></article>'; 	
 		}
 	$itemlistcontent .= '</ul>';
 	$templatestr  = 
